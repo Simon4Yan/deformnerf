@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
+
+    <title> Ray Deformation Networks for Novel View Synthesis of Refractive Objects </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 20px;
+            margin: 20px auto;
+            width: auto;
+            max-width: 800px;
+        }
+
+        hr {
+            border: 0;
+            height: 1.0px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        }
+
+        .gap-30 {
+            width: auto;
+            height: 30px;
+        }
+
+        .gap-20 {
+            width: auto;
+            height: 20px;
+        }
+
+        .gap-10 {
+            width: auto;
+            height: 10px;
+        }
+
+        .gap-5 {
+            width: auto;
+            height: 5px;
+
+        .gap-0 {
+            width: auto;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<style>a {
+    TEXT-DECORATION: none
+}</style>
+
+<div class="container">
+    <center>
+        <body>
+
+        <center><span style="font-size:40px">
+      Ray Deformation Networks for Novel View Synthesis of Refractive Objects
+    </span></center>
+        <div class="gap-20"></div>
+        <!---------------------  authors --------------------->
+        <center><span style="font-size:20px">
+          <div style="display:inline-block">
+          <a href="https://weijiandeng.xyz" target="_blank" style=" color:#007acc">Weijian Deng<sup>1</sup></a>,
+          </div>
+
+         <div style="display:inline-block">
+          <a href="https://sites.google.com/view/djcampbell" target="_blank" style=" color:#007acc">Dylan Campbell<sup>1</sup></a>,
+          </div>
+
+          <div style="display:inline-block">
+          <a href="https://chuny1.github.io/" target="_blank" style=" color:#007acc">Chunyi Sun<sup>1</sup></a>,
+          </div>
+
+            <br>
+
+          <div style="display:inline-block">
+          <a href="https://www.linkedin.com/in/shubham-kanitkar" target="_blank" style=" color:#007acc">Shubham Kanitkar<sup>2</sup></a>,
+          </div>
+
+            <div style="display:inline-block">
+          <a href="https://www.linkedin.com/in/shaffermatthew" target="_blank" style=" color:#007acc">Matthew Shaffer<sup>2</sup></a>,
+          </div>
+
+
+         <div style="display:inline-block">
+          <a href="http://users.cecs.anu.edu.au/~sgould/" target="_blank" style=" color:#007acc">Stephen Gould<sup>1</sup></a>,
+          </div>
+
+    </span></center>
+
+        <!--------------------- affiliations --------------------->
+        <div class="gap-5"></div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <center><span style="font-size:20px">
+          <sup>1</sup>Australian National University, <sup>2</sup>RIOS Intelligent Machines
+        </span></center>
+            </div>
+        </div>
+        <hr>
+
+        <!--------------------- links --------------------->
+        <div class="gap-10"></div>
+
+        <center>
+    <span style="font-size:20px">
+      <b>WACV 2024</b>
+
+<!--      [<a href="./files/ICML'21.pdf" target="_blank" style=" color:#007acc">Paper</a>]-->
+
+      [<a href="./files/wacv_157_poster.pdf " target="_blank" style=" color:#007acc">Poster</a>]
+
+      [<a href="./files/0157.pdf" target="_blank" style=" color:#007acc">Paper</a>]
+
+      [<a href="./files/wacv24-157-slides.pdf" target="_blank" style=" color:#007acc">Slides</a>]
+
+      [<a href="./files/bibtex.txt" target="_blank" style=" color:#007acc">BibTeX</a>]
+
+<!--      [<a href="https://github.com/Simon4Yan/Accuracy-estimation-with-self-supervision" target="_blank" style=" color:#007acc">Code</a>]-->
+<!--        -->
+    </span>
+
+       <div class="gap-20"></div>
+        <div class="gap-0">
+        <iframe width="80%" height="360" src="https://www.youtube.com/embed/EnBIWbdRQCE?si=5WAJNTY15rnxTtgF" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="img" style="text-align:center">
+            <img src="./figs/framework.png" style="margin:0.2em;max-width:100%">
+        </div>
+        <div class="gap-10"></div>
+
+        <div class="gap-10"></div>
+        <b><span style="font-size:25px">Abstract</span></b><br>
+        <div class="gap-10"></div>
+        <p style="text-align:justify; text-justify:inter-ideograph;">
+            Neural Radiance Fields (NeRF) have demonstrated exceptional capabilities in creating photorealistic novel views using volume rendering on a radiance field.
+            However, the intrinsic assumption of straight light rays within NeRF becomes a limitation when dealing with transparent or translucent objects that exhibit refraction, and therefore have curved light paths.
+            This hampers the ability of these approaches to accurately model the appearance of refractive objects, resulting in suboptimal novel view synthesis and geometry estimates.
+            To address this issue, we propose an innovative solution using deformable networks to learn a tailored deformation field for refractive objects.
+            Our approach predicts position and direction offsets, allowing NeRF to model the curved light paths caused by refraction and therefore the complex and highly view-dependent appearances of refractive objects.
+            We also introduce a regularization strategy that encourages piece-wise linear light paths, since most physical systems can be approximated with a piece-wise constant index of refraction.
+            By seamlessly integrating our deformation networks into the NeRF framework, our method achieves significant improvements in rendering refractive objects from novel views.
+        </p>
+
+
+
+        <hr>
+        Correspondence to {firstname.lastname}@anu.edu.au
+        <hr>
+
+
+        </body>
+    </center>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="res/js/bootstrap.min.js"></script>
+
+
+</html>
